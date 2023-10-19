@@ -12,6 +12,16 @@
         "uri": "turbo://fragment/web",
         "pull_to_refresh_enabled": true
       }
+    },
+    {
+      "patterns": [
+        "/categories/[0-9]+$"
+      ],
+      "properties": {
+        "context": "modal",
+        "uri": "turbo://fragment/web/modal/sheet",
+        "pull_to_refresh_enabled": false
+      }
     }
   ]
 }

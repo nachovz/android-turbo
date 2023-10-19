@@ -8,10 +8,14 @@ import kotlin.reflect.KClass
 
 class MainSessionNavHost : TurboSessionNavHostFragment() {
     override var sessionName = "main"
-    override var startLocation = "http://192.168.86.44:3000/quotes"
+    override var startLocation = "https://3000-nachovz-railsturbo-yfumzrlo3mn.ws-us105.gitpod.io/quotes"
 
     override val registeredFragments: List<KClass<out Fragment>>
-        get() = listOf(WebFragment::class)
+        get() = listOf(
+            WebFragment::class,
+            WebModalFragment::class,
+            WebBottomSheetFragment::class
+        )
 
 
     override val registeredActivities: List<KClass<out AppCompatActivity>>
